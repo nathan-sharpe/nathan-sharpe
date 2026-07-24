@@ -1,30 +1,23 @@
 # Nathan Sharpe
 
-AI Solutions Developer. I build production AI systems: RAG platforms, agentic workflows, and automation pipelines.
+AI Solutions Developer based in Cincinnati. I build production AI systems: RAG platforms, agentic workflows, and business automations.
 
 ## What I've built
 
-**Commodoor** ([commodoorai.com](https://www.commodoorai.com/)) is a production RAG platform I built as technical lead on a two-person team for a corporate client in the construction industry. It answers questions over 35,000+ document chunks and is live today with a public demo page.
+**Commodoor** - a production RAG platform for a construction industry client, built on a two-person team where I served as technical lead. n8n orchestration, LangChain-powered Supabase vector database (35,000+ document chunks), Gemini 2.5 Pro with OpenAI embeddings, deployed on DigitalOcean and Google Cloud for 300 concurrent users. Live today: [commodoorai.com](https://www.commodoorai.com/)
 
-The parts I'm most proud of:
+**Client automation systems** - AI-powered content creation, customer support routing, and newsletter/blog generation pipelines for corporate clients including EXAIR, delivered through K&J Web Designs.
 
-- **Retrieval architecture**: n8n orchestration over a LangChain-powered Supabase vector database, with Gemini 2.5 Pro answering over OpenAI embeddings
-- **Metadata enrichment**: a pipeline that uses a small LLM (GPT-4o mini) to extract structured attributes from every document chunk, which substantially improved retrieval accuracy
-- **Automated ingestion**: a Firecrawl + n8n web scraping pipeline that pulls, vectorizes, and ingests OSHA regulations
-- **Production infrastructure**: DigitalOcean backend provisioned for 300 concurrent users, Google Cloud front end
-- **Feedback instrumentation**: per-answer ratings with categorized failure reasons, logged to Supabase to drive iteration across 200+ test queries
-
-Before that, I built AI-powered automation systems for corporate clients at K&J Web Designs, including content creation, customer support routing, and newsletter and blog generation, and led front-end development for PrepShift, a restaurant scheduling app.
+**Local AI infrastructure** - fully self-hosted stacks with Docker, n8n, and Ollama for privacy-preserving agent development.
 
 ## Currently
 
-Building an open-source RAG system in Python to share the patterns I use in client work: ingestion, retrieval, evaluation, and deployment. Watch this space.
+Just shipped [Total Transparency RAG](https://github.com/nathan-sharpe/Total-Transparency-RAG) - the open-source, code-only companion to the client work above. A RAG system over the SciFact corpus with a rigorous two-layer evaluation harness (retrieval metrics + LLM-as-judge), built as the deliberate inverse of the n8n/LangChain stack: chunking, retrieval scoring, and recall@k/MRR metrics all hand-built, Postgres/pgvector and local Ollama models behind a FastAPI layer, with input/output guardrails and CI throughout.
 
 ## Stack
 
-n8n, LangChain, Supabase (pgvector), Python, SQL, LLM APIs (Gemini, OpenAI), Firecrawl, DigitalOcean, Google Cloud, Docker, Ollama, self-hosted local AI
+n8n | LangChain | Supabase (pgvector) | Python | SQL | JavaScript/React | Docker | Ollama | DigitalOcean | Google Cloud | Gemini & OpenAI APIs
 
-## Contact Information
+## Get in touch
 
-- LinkedIn: [in/nathan-j-sharpe](https://www.linkedin.com/in/nathan-j-sharpe/)
-- Email: nathan.sharpe.dev@gmail.com
+[LinkedIn](https://www.linkedin.com/in/nathan-j-sharpe/) - open to roles in AI solutions development, implementation, and workflow automation.
